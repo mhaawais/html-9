@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <form>
+      <fieldset>
+        <legend>Personal Info</legend>
+
+        <label>
+          Full Name :
+          <input
+            type="text"
+            required
+            name="user-name"
+            placeholder="Your Name here"
+          />
+        </label>
+        <br />
+
+        <label>
+          Email Address :
+          <input
+            type="email"
+            required
+            name="email"
+            placeholder="Your Email here"
+          />
+        </label>
+        <br />
+
+        <label>
+          Phone Number :
+          <input
+            type="number"
+            required
+            name="tel"
+            placeholder="Your Number here"
+          />
+        </label>
+        <br />
+
+        <label for="message1">
+          Message :
+          <textarea
+            id="message1"
+            name="message"
+            placeholder="Your Message here"
+            rows="5"
+          ></textarea>
+        </label>
+
+        <br />
+        Gender :
+        <label>
+          Male <input type="radio" name="gender" value="Male" checked /> Female
+          <input type="radio" name="gender" value="Female" />
+        </label>
+
+        <br />
+        <label>
+          Preferred Contact Method :
+          <select name="contact method">
+            <option value="email">Email</option>
+            <option value="phone">Phone</option>
+            <option value="Text">Text</option>
+            <option value="Whatsapp">Whatsapp</option>
+          </select>
+        </label>
+
+        <br />
+        Areas of Interest :
+        <input
+          type="checkbox"
+          name="interest"
+          value="Programming"
+          id="program"
+          checked
+        />
+        <label for="program">Programming</label>
+
+        <input type="checkbox" name="interest" value="Design" id="design" />
+        <label for="design">Design</label>
+
+        <input type="checkbox" name="interest" value="Writing" id="write" />
+        <label for="write">Writing</label>
+
+        <br />
+        <input type="submit" value="Submit" />
+
+        <input type="reset" value="Reset" />
+      </fieldset>
+    </form>
+  </body>
+</html>
